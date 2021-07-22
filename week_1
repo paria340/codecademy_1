@@ -1,0 +1,109 @@
+# Parisa Moshfegh
+# I am caring
+print(" PPPP ")
+print(" P    P ")
+print(" P    P ")
+print(" PPP ")
+print(" P ")
+print(" P ")
+print(" P ")
+print(" M   M ")
+print(" MM MM ")
+print(" MM MM ")
+print(" M M M ")
+print(" M   M ")
+print(" M   M ")
+print(" M   M ")
+
+--
+
+lovely_loveseat_description = """ 
+Lovely Loveseat. Tufted polyester blend on wood. 32 inches high x 40 inches wide x 30 inches deep. Red or white.
+"""
+lovely_loveseat_price = 254.00
+stylish_settee_description = """
+Stylish Settee. Faux leather on birch. 29.50 inches high x 54.75 inches wide x 28 inches deep. Black.
+"""
+stylish_settee_price = 180.50
+luxurious_lamp_description = """
+Luxurious Lamp. Glass and iron. 36 inches tall. Brown with cream shade.
+"""
+luxurious_lamp_price = 52.15
+sales_tax = 0.088
+customer_one_total = 0
+customer_one_itemization = ""
+customer_one_total += lovely_loveseat_price
+customer_one_itemization += lovely_loveseat_description
+customer_one_total += stylish_settee_price
+customer_one_itemization += stylish_settee_description
+customer_one_total += luxurious_lamp_price
+customer_one_itemization += luxurious_lamp_description
+customer_one_tax = customer_one_total * sales_tax
+customer_one_total += customer_one_tax
+print("Customer One Items: ")
+print(customer_one_itemization)
+print("Customer One Total: ")
+print(customer_one_total)
+
+--
+
+grade = 86
+if grade >= 90:
+  print("A")
+elif grade >= 80:
+  print("B")
+elif grade >= 70:
+  print("C")
+elif grade >= 60:
+  print("D")
+else:
+  print("F")
+  
+--
+
+if planet == 1:
+  weight = weight * 0.91
+elif planet == 2:
+  weight = weight * 0.38
+elif planet == 3:
+  weight = weight * 2.34
+elif planet == 4:
+  weight = weight * 1.06
+elif planet == 5:
+  weight = weight * 0.92
+elif planet == 6:
+  weight = weight * 1.19
+print("Your weight:", weight)
+
+--
+
+name = "Parisa"
+question = "Will I get okay?"
+answer = ""
+import random
+random_number = random.randint(1, 9)
+print(random_number)
+if random_number == 1:
+  answer = "Yes-definiely."
+elif random_number == 2:
+  answer = "It is decidedly so"
+elif random_number == 3:
+  answer = "Without a doubt"
+elif random_number == 4:
+  answer = "Reply hazy, try again."
+elif random_number == 5:
+  answer = "Ask again later"
+elif random_number == 6:
+  answer = "Better not tell you now."
+elif random_number == 7:
+  answer = "My sources say no."
+elif random_number == 8:
+  answer = "Outlook not so good"
+elif random_number == 9:
+  answer = "Very doubtful"
+else:
+  answer = "Error"
+print(name + " asks: " + question)
+print("Magic 8-Ball's answer: " + answer)
+
+--
