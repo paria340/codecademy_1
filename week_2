@@ -1,0 +1,30 @@
+weight = 4.8
+flat_charge = 20
+#ground shipping
+cost_ground = ""
+if weight <= 2:
+ cost_ground =  weight * 1.50 + flat_charge
+elif weight > 2 and weight <= 6:
+ cost_ground =  weight * 3.00 + flat_charge
+elif weight > 6 and weight <= 10:
+  cost_ground = weight * 4.00 + flat_charge
+else: 
+  cost_ground = weight * 4.75 + flat_chanrge
+print("gound shipping: ", cost_ground)
+cost_ground_premium = 125.00
+print("ground premium: ", cost_ground_premium)
+print("cost of ground premium does not change with weight!")
+#drone shipping
+cost_drone = ""
+if weight <= 2:
+ cost_drone =  weight * 4.50 
+elif weight > 2 and weight <= 6:
+ cost_drone =  weight * 9.00 
+elif weight > 6 and weight <= 10:
+  cost_drone = weight * 12.00 
+else: 
+  cost_drone = weight * 14.25 
+print("drone shipping :", cost_drone)
+
+--
+
